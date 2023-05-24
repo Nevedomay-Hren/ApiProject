@@ -1,0 +1,8 @@
+#file or directory
+
+.idea/
+venv/
+.env
+.cache/
+.config/
+.upm/
