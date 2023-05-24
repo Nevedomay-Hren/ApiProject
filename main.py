@@ -43,8 +43,7 @@ def main():
     parser = argparse.ArgumentParser(description='переделывает ссылки в битлинки и считает количество переходов по битлинкам')
     parser.add_argument('link_or_bitlink', help='link or bitlink')
     args = parser.parse_args()
-    print(args.link_or_bitlink)
-    link = input('Введите ссылку ')
+    link = args.link_or_bitlink
     try:
         if is_bitlink(link, token):
             print(count_clicks(token, link))
