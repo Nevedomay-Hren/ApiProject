@@ -3,7 +3,6 @@ import argparse
 from urllib.parse import urlparse
 import requests
 from dotenv import load_dotenv
-load_dotenv()
 
 
 def is_bitlink(url, token):
@@ -39,6 +38,7 @@ def count_clicks(token, link):
 
 
 def main():
+    load_dotenv()
     token = os.environ['BITLY_TOKEN']
     parser = argparse.ArgumentParser(description='переделывает ссылки в битлинки и считает количество переходов по битлинкам')
     parser.add_argument('link_or_bitlink', help='link or bitlink')
