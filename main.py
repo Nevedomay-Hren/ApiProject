@@ -52,5 +52,6 @@ def main():
     except requests.exceptions.HTTPError:
         print("Вы ввели неправильную ссылку.")
 
+
 if __name__ == '__main__':
     main()
